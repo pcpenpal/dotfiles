@@ -1,0 +1,34 @@
+" .vimrc
+
+set nocompatible 
+filetype indent plugin on 
+syn on
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'rust-lang/rust.vim'
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+
+call plug#end()
+
+set tabstop=8
+set softtabstop=4
+set shiftwidth=4
+set ruler
+set hlsearch
+set incsearch
+set autoindent
+set cindent
+set wrap
+set expandtab
+set tags=./tags;,./TAGS;,tags,TAGS
+set fileencodings=utf-8,cp949,latin1
+set modeline
+set nobackup
+set number
+
+au FileType ruby set ts=8 sw=2 sts=2 et
+
+set bg=dark
